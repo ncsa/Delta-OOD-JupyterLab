@@ -1,6 +1,6 @@
-# Open OnDemand Jupyter App for HAL
+# Open OnDemand Jupyter App for Delta
 
-Interactive Jupyter Notebook app for HAL's Open OnDemand portal
+Interactive Jupyter Notebook app for Delta's Open OnDemand portal
 
 Adopted from https://github.com/OSC/bc_example_jupyter
 
