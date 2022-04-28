@@ -27,9 +27,9 @@ attributes:
   #     modules: "python/3.5 cuda/8.0.44"
   
   bc_account:
-  label: "Name of account"
-  widget: "text_field"
-  value: ""
+    label: "Name of account"
+    widget: "text_field"
+    value: ""
   
   bc_reservation:
     label: "Name of reservation (leave empty if none)"
