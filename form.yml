@@ -26,6 +26,11 @@ attributes:
   # @example Using combination of modules
   #     modules: "python/3.5 cuda/8.0.44"
   
+  bc_account:
+  label: "Name of account"
+  widget: "text_field"
+  value: ""
+  
   bc_reservation:
     label: "Name of reservation (leave empty if none)"
     widget: "text_field"
@@ -47,7 +52,7 @@ attributes:
   bc_num_memory:
     label: "Amount of RAM"
     widget: "text_field"
-    help: "Use Slurm format, e.g. 4096M, 10G. If left blank, 4505 MB will be allocated per CPU core requested."
+    help: "Use Slurm format, e.g. 4096M, 10G. If left blank, 1000 MB will be allocated per CPU core requested."
 
   bc_num_gpus:
     label: "Number of GPUs"
@@ -71,6 +76,7 @@ attributes:
 #   option, then it will not appear in the form page that the user sees in the
 #   Dashboard
 form:
+  - bc_account
   - bc_partition
   - bc_num_hours
   - bc_reservation
