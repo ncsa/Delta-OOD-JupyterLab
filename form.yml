@@ -8,7 +8,7 @@
 # under /etc/ood/config/clusters.d/*.yml
 # @example Use the Owens cluster at Ohio Supercomputer Center
 #     cluster: "owens"
-cluster: "magnus"
+cluster: "delta"
 
 # Define attribute values that aren't meant to be modified by the user within
 # the Dashboard form
@@ -34,12 +34,10 @@ attributes:
   bc_partition:
     label: "Partition"
     widget: "select"
-    value: "debug"
+    value: "cpu"
     options:
-      - ["gpu","gpu"]
-      - ["magnus","magnus"]
-      - ["rstudio","rstudio"]
-      - ["debug","debug"]
+      - ["cpu","cpu"]
+      - ["gpuA100x4","gpuA100x4"]
 
   bc_num_slots:
     label: "Number of CPUs"
@@ -54,13 +52,13 @@ attributes:
   bc_num_gpus:
     label: "Number of GPUs"
     widget: "number_field"
-    max: "4"
+#    max: "4"
     min: "0"
 
   bc_num_hours:
     label: "Number of hours"
     widget: "number_field"
-    max: "12"
+#    max: "12"
     min: "1"
 
 # All of the attributes that make up the Dashboard form (in respective order),
