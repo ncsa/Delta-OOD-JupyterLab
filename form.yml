@@ -39,10 +39,11 @@ attributes:
   bc_partition:
     label: "Partition"
     widget: "select"
-    value: "cpu"
+    value: "cpu-interactive"
     options:
-      - ["cpu","cpu"]
-      - ["gpuA100x4","gpuA100x4"]
+      - ["cpu-interactive","cpu-interactive"]
+      - ["gpuA100x4-interactive","gpuA100x4-interactive"]
+      - ["gpuA40x4-interactive","gpuA40x4-interactive"]
 
   bc_num_slots:
     label: "Number of CPUs"
