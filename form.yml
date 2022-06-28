@@ -40,10 +40,14 @@ attributes:
     label: "Partition"
     widget: "select"
     value: "cpu-interactive"
+    help: "Interactive partitions are limited to 30 minutes."
     options:
       - ["cpu-interactive","cpu-interactive"]
       - ["gpuA100x4-interactive","gpuA100x4-interactive"]
       - ["gpuA40x4-interactive","gpuA40x4-interactive"]
+      - ["cpu","cpu"]
+      - ["gpuA100x4","gpuA100x4"]
+      - ["gpuA40x4","gpuA40x4"]
 
   bc_num_slots:
     label: "Number of CPUs"
