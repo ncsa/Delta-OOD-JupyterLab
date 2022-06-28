@@ -17,8 +17,12 @@ module reset
 
 module avail
 
-# Load the require modules
-module load anaconda3
+# Load the required modules
+<%- if context.bc_partition.include? 'gpu' -%>
+module load anaconda3_gpu
+<%- else -%>
+module load anaconda3_cpu
+<%- end -%>
 
 # List loaded modules
 module list
