@@ -71,6 +71,13 @@ attributes:
     widget: "text_field"
     help: "Slurm format: DD-HH:MM:SS"
 
+  working_dir:
+    label: "Working Directory"
+    data-filepicker: true
+    data-target-file-type: dirs  # Valid values are: files, dirs, or both
+    readonly: false
+    help: "Select your project directory; defaults to $HOME"
+
 # All of the attributes that make up the Dashboard form (in respective order),
 # and made available to the submit configuration file and the template ERB
 # files
@@ -89,3 +96,4 @@ form:
   - bc_num_memory
   - bc_num_gpus
   - bc_email_on_started
+  - working_dir
