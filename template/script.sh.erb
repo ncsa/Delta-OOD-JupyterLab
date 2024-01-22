@@ -13,7 +13,8 @@ cd "${HOME}"
 # Purge the module environment to avoid conflicts
 hostname
 
-module reset
+module purge
+module load default-s11
 
 module avail
 
