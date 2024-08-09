@@ -43,12 +43,14 @@ attributes:
     value: "cpu-interactive"
     help: "Interactive partitions are limited to one hour."
     options:
-      - ["cpu-interactive","cpu-interactive"]
-      - ["gpuA100x4-interactive","gpuA100x4-interactive"]
-      - ["gpuA40x4-interactive","gpuA40x4-interactive"]
-      - ["cpu","cpu"]
-      - ["gpuA100x4","gpuA100x4"]
-      - ["gpuA40x4","gpuA40x4"]
+#      - ["cpu-interactive","cpu-interactive"]
+#      - ["gpuA100x4-interactive","gpuA100x4-interactive"]
+#      - ["gpuA40x4-interactive","gpuA40x4-interactive"]
+#      - ["cpu","cpu"]
+#      - ["gpuA100x4","gpuA100x4"]
+#      - ["gpuA40x4","gpuA40x4"]
+      - ["test","test"]
+      - ["ghx4","ghx4"]
 
   bc_num_slots:
     label: "Number of CPUs"
