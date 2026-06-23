@@ -15,22 +15,19 @@ module purge
 module avail
 
 # Load the required modules
-if uname -r | grep -q "el9"; then
-  # RHEL 9 environment
+if uname -r | grep -q "el9_6"; then
+  # RHEL 9.6 environment
+  module load default-rh96
+else
+  # RHEL 9.4 environment
   module load default
-<%- if context.bc_partition.include? 'gpu' -%>
-  module load pytorch-conda/2.8
-<%- else -%>
-  module load miniforge3-python
-<%- end -%>
-else # RHEL 8 environment
-  module load default-s11
-<%- if context.bc_partition.include? 'gpu' -%>
-  module load anaconda3_gpu
-<%- else -%>
-  module load anaconda3_cpu
-<%- end -%>
 fi
+
+<%- if context.bc_partition.include? 'gpu' -%>
+module load pytorch-conda/2.8
+<%- else -%>
+module load miniforge3-python
+<%- end -%>
 
 # List loaded modules
 module list
