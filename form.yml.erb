@@ -95,9 +95,8 @@ attributes:
 
   working_dir:
     label: "Working Directory"
-    data-filepicker: true
-    data-target-file-type: dirs  # Valid values are: files, dirs, or both
-    readonly: false
+    widget: "path_selector"
+    show_files: false
     help: "Select your project directory; defaults to $HOME"
 
 # All of the attributes that make up the Dashboard form (in respective order),
